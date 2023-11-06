@@ -18,10 +18,6 @@ export class PageComponent implements OnInit {
     pageLinkSize: 7
   };
 
-  /**
-   * 本组件抄袭自 yunzhiclub/platform 项目
-   * https://github.com/yunzhiclub/platform/blob/master/src/app/share/component/paginator/paginator.component.ts
-   */
   @Output()
   changePage: EventEmitter<number> = new EventEmitter();
 
