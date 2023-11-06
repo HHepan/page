@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,10 @@ import {Router} from "@angular/router";
 export class AppComponent {
   title = 'web';
 
-  constructor(private route: Router) {
-    this.route.navigate(['/index']);
+  constructor(private router: Router) {
+    if (localStorage.getItem('init') === null) {
+      this.router.navigate(['/index']);
+      localStorage.setItem('init', String(true));
+    }
   }
 }

@@ -20,6 +20,4 @@ export class Component1Component implements OnInit {
   onClose() {
     this.router.navigate(['../'], {relativeTo: this.route});
   }
-
-
 }
