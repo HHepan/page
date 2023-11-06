@@ -1,5 +1,6 @@
 # 概述
-angular + spring boot 分页功能及查询
+angular + spring boot 分页功能及查询<br>
+实现了路由控制的弹窗效果
 
 # 环境
 node: v18.18.0<br>
